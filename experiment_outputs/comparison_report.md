@@ -1,0 +1,130 @@
+# ABR Closed-Loop Experiment — Comparison Report
+
+Generator: Claude Sonnet 4.6  |  Origin: Human (Relational Relativity Corp)
+Steps: 144  |  dt = 0.041667 s  |  Total time: 6.0000 s
+
+---
+
+## 1. Setup
+
+**Plant parameters (shared)**
+- MASS=3.0 kg, ARM=0.5 m, G=9.806 m/s²
+- I_EFF=0.75 kg·m², DAMPING=0.5 N·m·s/rad
+- R_W=0.7 Ω, K_T=1.0 N·m/A, V_BUS=48.0 V
+- THETA_TARGET=20.0°, THETA_CROSS=10.0°
+- DIST_MAG=25.0 N·m (applied when θ ≥ THETA_CROSS, independent per plant)
+- V_RAISE=19.0 V, TAU_ELEC_MAX=68.571 N·m
+
+**Controller P** — Python KernelV8 class (abr_flex_demo.py)
+- A: a_out = tau_s(t) − tau_s(t−1)  [N·m directed difference in sensed torque]
+- B: delta_V = a_out × R_W/K_T  [V] (traverse declared K_T, R_W topology)
+- R: OPEN (rho_base, chi_0 not declared through M)
+- Sigma: sigma_v += delta_V
+
+**Controller K** — Frozen Kernel V8 Rust operators (irrs_kernel_py / abr-irrs)
+- Declared topology: v_τ(0) → v_cmd(1), Provenance=Coupling, 1 edge
+- NodeField: x[v_τ] = tau_s × R_W/K_T [V]; x[v_cmd] = v_cmd_prior [V]
+- A: A_K = x[v_τ] − x[v_cmd]  [V] (Rust operator_a via PyO3)
+- B: B_K = A_K (terminal edge identity; Rust operator_b via PyO3)
+- R: OPEN (rho_base, chi_0 not declared through M; operator_r NOT called)
+- Sigma: sigma_v += B_K
+
+**C projection (both controllers)**
+- frac = clamp((THETA_TARGET − θ) / THETA_TARGET, −1, 1)
+- v_cmd = sigma_v + frac × V_RAISE, clamped to [−V_BUS, +V_BUS]
+- tau_cmd = K_T × v_cmd / R_W
+
+## 2. Final State Comparison
+
+| Quantity | Controller P | Controller K |
+|---|---|---|
+| Joint angle (°) | 19.9084 | 1.1753 |
+| Angular velocity (rad/s) | -0.0214 | -0.0000 |
+| Target error (°) | 0.0916 | 18.8247 |
+| sigma_v (V) | 21.0147 | -0.1723 |
+| v_cmd (V) | 21.1017 | 17.7112 |
+| tau_cmd (N·m) | 30.1453 | 25.3017 |
+
+## 3. Disturbance Response
+
+- Controller P disturbance onset: step 4 (t=0.167 s)
+- Controller K disturbance onset: step 6 (t=0.250 s)
+
+**Controller P peak A response** (step 5, θ=22.06°):
+- A_out = 26.9312 N·m
+- delta_V = 18.8519 V
+- sigma_v = 20.6273 V
+- v_cmd = 18.666 V
+
+**Controller K peak A response** (step 7, θ=8.75°):
+- A_K = 18.8417 V (Rust operator_a)
+- B_K = 18.8417 V (Rust operator_b, terminal edge identity)
+- sigma_v = 11.0948 V
+- v_cmd = 21.784 V
+
+
+## 4. Trace K Identity: A_K(t) = Residual_V(t-1)
+
+From the traceability matrix: A_K(t+1) = tau_s(t+1)×R_W/K_T − v_cmd(t)
+This is the voltage residual of the prior step — the gap between what the sensor
+reports as needed and what was commanded.
+
+- Steps checked: 143
+- Maximum deviation: 0.00e+00 V
+- Identity holds at all steps (< 1e-9 V): **YES**
+
+Sample (first 6 steps with prior residual):
+| Step | A_K(t) [V] | Residual_V(t-1) [V] | Error [V] |
+|---|---|---|---|
+| — | -19.000000 | -19.000000 | 0.00e+00 |
+| — | 4.066435 | 4.066435 | 0.00e+00 |
+| — | 3.081604 | 3.081604 | 0.00e+00 |
+| — | 2.335147 | 2.335147 | 0.00e+00 |
+| — | 1.769832 | 1.769832 | 0.00e+00 |
+| — | 18.841739 | 18.841739 | 0.00e+00 |
+
+## 5. Stability and Settling
+
+Final 1-second window (last 24 steps):
+| Metric | Controller P | Controller K |
+|---|---|---|
+| Mean target error (°) | 0.1254 | 18.8247 |
+| Max target error (°) | 0.2560 | 18.8247 |
+| Mean |ω| (rad/s) | 0.0245 | 0.0000 |
+| Max |ω| (rad/s) | 0.0516 | 0.0000 |
+
+## 6. Computational Work
+
+| Metric | Controller P | Controller K |
+|---|---|---|
+| Total wall time (µs) | 439.1 | 1729.2 |
+| Mean per step (ns) | 3048 | 12008 |
+| Max per step (ns) | 25103 | 661705 |
+
+Note: Controller K includes Python→Rust FFI overhead per step.
+The frozen Rust kernel compile time is not included.
+
+## 7. Conformance Assessment (PASS / FAIL / OPEN)
+
+| Condition | Controller P | Controller K | Status |
+|---|---|---|---|
+| Trace K identity: A_K(t+1) = Residual_V(t) | N/A | PASS | OC-TRACE-1 dependency |
+| R not evaluated (rho_base, chi_0 undeclared) | OPEN | OPEN | OC-TRACE-2, OC-TRACE-3 |
+| B output reported separately from R | PASS | PASS | Explicit in trace |
+| Operator authenticity: actual Frozen Kernel V8 Rust used | Python approx. | PASS (PyO3 binding) | Required by Origin |
+| Controllers drive independent plants | PASS | PASS | Separate plant state |
+| Independent disturbance triggers per plant | PASS | PASS | Per-theta trigger |
+| Machine-readable step traces (JSON) | PASS | PASS | Saved to experiment_outputs/ |
+
+**Open conditions (not resolvable here — require Origin declaration):**
+- OC-TRACE-1: Structural gap A_P_V(t+1) = Residual_V(t) + frac(t)×V_RAISE not eliminated.
+  Cause: Controller P accumulates Δtau_s, not the full voltage residual.
+- OC-TRACE-2: ρ_base not declared through M. R not evaluated.
+- OC-TRACE-3: χ₀ not declared through M. ρ computation blocked.
+- OC-SIM-1: Controller K drives a different plant trajectory than Controller P.
+  The two controllers are structurally distinct and produce distinct closed-loop behaviors.
+  Convergence, stability, and target accuracy of Controller K are observed results
+  of this experiment — not guaranteed by the declaration.
+
+---
+*Report generated by abr_closed_loop_experiment.py*
