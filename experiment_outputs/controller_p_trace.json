@@ -26,7 +26,7 @@
       "tau_s_next_nm": 0.0,
       "residual_v_v": -19.0,
       "residual_nm": -27.14285714,
-      "controller_wall_ns": 14196
+      "controller_wall_ns": 21654
     },
     {
       "step": 2,
@@ -53,7 +53,7 @@
       "tau_s_next_nm": 0.92356865,
       "residual_v_v": -14.93356537,
       "residual_nm": -21.33366482,
-      "controller_wall_ns": 5207
+      "controller_wall_ns": 8546
     },
     {
       "step": 3,
@@ -80,7 +80,7 @@
       "tau_s_next_nm": 2.53632318,
       "residual_v_v": -8.438205,
       "residual_nm": -12.05457857,
-      "controller_wall_ns": 3207
+      "controller_wall_ns": 4776
     },
     {
       "step": 4,
@@ -107,7 +107,7 @@
       "tau_s_next_nm": 29.46754776,
       "residual_v_v": 16.64947717,
       "residual_nm": 23.78496739,
-      "controller_wall_ns": 2856
+      "controller_wall_ns": 4304
     },
     {
       "step": 5,
@@ -134,7 +134,7 @@
       "tau_s_next_nm": 30.52535532,
       "residual_v_v": 2.70141162,
       "residual_nm": 3.85915946,
-      "controller_wall_ns": 1723
+      "controller_wall_ns": 3144
     },
     {
       "step": 6,
@@ -161,7 +161,7 @@
       "tau_s_next_nm": 31.40482598,
       "residual_v_v": 6.13800912,
       "residual_nm": 8.76858445,
-      "controller_wall_ns": 3032
+      "controller_wall_ns": 2898
     },
     {
       "step": 7,
@@ -188,7 +188,7 @@
       "tau_s_next_nm": 31.97218879,
       "residual_v_v": 8.27721709,
       "residual_nm": 11.82459584,
-      "controller_wall_ns": 2196
+      "controller_wall_ns": 2515
     },
     {
       "step": 8,
@@ -215,7 +215,7 @@
       "tau_s_next_nm": 32.16233257,
       "residual_v_v": 8.81548459,
       "residual_nm": 12.59354941,
-      "controller_wall_ns": 1381
+      "controller_wall_ns": 2404
     },
     {
       "step": 9,
@@ -242,7 +242,7 @@
       "tau_s_next_nm": 31.97114113,
       "residual_v_v": 7.74182627,
       "residual_nm": 11.05975182,
-      "controller_wall_ns": 1512
+      "controller_wall_ns": 2368
     },
     {
       "step": 10,
@@ -269,7 +269,7 @@
       "tau_s_next_nm": 31.44747722,
       "residual_v_v": 5.33127798,
       "residual_nm": 7.61611139,
-      "controller_wall_ns": 2774
+      "controller_wall_ns": 2233
     },
     {
       "step": 11,
@@ -296,7 +296,7 @@
       "tau_s_next_nm": 30.69022677,
       "residual_v_v": 2.09083252,
       "residual_nm": 2.98690361,
-      "controller_wall_ns": 1647
+      "controller_wall_ns": 3354
     },
     {
       "step": 12,
@@ -323,7 +323,7 @@
       "tau_s_next_nm": 29.84064263,
       "residual_v_v": -1.34160839,
       "residual_nm": -1.91658341,
-      "controller_wall_ns": 1374
+      "controller_wall_ns": 2645
     },
     {
       "step": 13,
@@ -350,7 +350,7 @@
       "tau_s_next_nm": 29.05963017,
       "residual_v_v": -4.32638031,
       "residual_nm": -6.1805433,
-      "controller_wall_ns": 2718
+      "controller_wall_ns": 2128
     },
     {
       "step": 14,
@@ -377,7 +377,7 @@
       "tau_s_next_nm": 28.49298078,
       "residual_v_v": -6.34612057,
       "residual_nm": -9.06588653,
-      "controller_wall_ns": 1782
+      "controller_wall_ns": 2118
     },
     {
       "step": 15,
@@ -404,7 +404,7 @@
       "tau_s_next_nm": 28.23853983,
       "residual_v_v": -7.09481649,
       "residual_nm": -10.13545213,
-      "controller_wall_ns": 1222
+      "controller_wall_ns": 2210
     },
     {
       "step": 16,
@@ -431,7 +431,7 @@
       "tau_s_next_nm": 28.3272236,
       "residual_v_v": -6.51795991,
       "residual_nm": -9.3113713,
-      "controller_wall_ns": 2946
+      "controller_wall_ns": 2544
     },
     {
       "step": 17,
@@ -458,7 +458,7 @@
       "tau_s_next_nm": 28.72088999,
       "residual_v_v": -4.80394368,
       "residual_nm": -6.86277668,
-      "controller_wall_ns": 1469
+      "controller_wall_ns": 2008
     },
     {
       "step": 18,
@@ -485,7 +485,7 @@
       "tau_s_next_nm": 29.32478879,
       "residual_v_v": -2.33324013,
       "residual_nm": -3.33320019,
-      "controller_wall_ns": 1092
+      "controller_wall_ns": 2444
     },
     {
       "step": 19,
@@ -512,7 +512,7 @@
       "tau_s_next_nm": 30.01121733,
       "residual_v_v": 0.40350419,
       "residual_nm": 0.57643456,
-      "controller_wall_ns": 3009
+      "controller_wall_ns": 2330
     },
     {
       "step": 20,
@@ -539,7 +539,7 @@
       "tau_s_next_nm": 30.6488406,
       "residual_v_v": 2.90126866,
       "residual_nm": 4.14466952,
-      "controller_wall_ns": 1751
+      "controller_wall_ns": 2873
     },
     {
       "step": 21,
@@ -566,7 +566,7 @@
       "tau_s_next_nm": 31.12904677,
       "residual_v_v": 4.73045485,
       "residual_nm": 6.75779264,
-      "controller_wall_ns": 7320
+      "controller_wall_ns": 2067
     },
     {
       "step": 22,
@@ -593,7 +593,7 @@
       "tau_s_next_nm": 31.38194225,
       "residual_v_v": 5.60537781,
       "residual_nm": 8.00768258,
-      "controller_wall_ns": 1556
+      "controller_wall_ns": 1894
     },
     {
       "step": 23,
@@ -620,7 +620,7 @@
       "tau_s_next_nm": 31.3810579,
       "residual_v_v": 5.42409975,
       "residual_nm": 7.74871393,
-      "controller_wall_ns": 3245
+      "controller_wall_ns": 3272
     },
     {
       "step": 24,
@@ -647,7 +647,7 @@
       "tau_s_next_nm": 31.14146371,
       "residual_v_v": 4.27715172,
       "residual_nm": 6.11021675,
-      "controller_wall_ns": 1729
+      "controller_wall_ns": 2888
     },
     {
       "step": 25,
@@ -674,7 +674,7 @@
       "tau_s_next_nm": 30.71549834,
       "residual_v_v": 2.42418581,
       "residual_nm": 3.46312258,
-      "controller_wall_ns": 2334
+      "controller_wall_ns": 2499
     },
     {
       "step": 26,
@@ -701,7 +701,7 @@
       "tau_s_next_nm": 30.18569883,
       "residual_v_v": 0.24049786,
       "residual_nm": 0.34356838,
-      "controller_wall_ns": 10133
+      "controller_wall_ns": 2366
     },
     {
       "step": 27,
@@ -728,7 +728,7 @@
       "tau_s_next_nm": 29.6520357,
       "residual_v_v": -1.85786053,
       "residual_nm": -2.65408647,
-      "controller_wall_ns": 1919
+      "controller_wall_ns": 2615
     },
     {
       "step": 28,
@@ -755,7 +755,7 @@
       "tau_s_next_nm": 29.21323942,
       "residual_v_v": -3.49448629,
       "residual_nm": -4.99212328,
-      "controller_wall_ns": 1558
+      "controller_wall_ns": 2245
     },
     {
       "step": 29,
@@ -782,7 +782,7 @@
       "tau_s_next_nm": 28.94667605,
       "residual_v_v": -4.40065349,
       "residual_nm": -6.28664784,
-      "controller_wall_ns": 3520
+      "controller_wall_ns": 2325
     },
     {
       "step": 30,
@@ -809,7 +809,7 @@
       "tau_s_next_nm": 28.89299352,
       "residual_v_v": -4.4577439,
       "residual_nm": -6.36820558,
-      "controller_wall_ns": 2618
+      "controller_wall_ns": 2143
     },
     {
       "step": 31,
@@ -836,7 +836,7 @@
       "tau_s_next_nm": 29.04963001,
       "residual_v_v": -3.70852338,
       "residual_nm": -5.29789054,
-      "controller_wall_ns": 1802
+      "controller_wall_ns": 2867
     },
     {
       "step": 32,
@@ -863,7 +863,7 @@
       "tau_s_next_nm": 29.37399104,
       "residual_v_v": -2.33831932,
       "residual_nm": -3.34045617,
-      "controller_wall_ns": 1168
+      "controller_wall_ns": 2189
     },
     {
       "step": 33,
@@ -890,7 +890,7 @@
       "tau_s_next_nm": 29.79478974,
       "residual_v_v": -0.63192629,
       "residual_nm": -0.90275184,
-      "controller_wall_ns": 2852
+      "controller_wall_ns": 3988
     },
     {
       "step": 34,
@@ -917,7 +917,7 @@
       "tau_s_next_nm": 30.22847728,
       "residual_v_v": 1.08420253,
       "residual_nm": 1.54886076,
-      "controller_wall_ns": 1700
+      "controller_wall_ns": 2743
     },
     {
       "step": 35,
@@ -944,7 +944,7 @@
       "tau_s_next_nm": 30.59645738,
       "residual_v_v": 2.50274151,
       "residual_nm": 3.57534502,
-      "controller_wall_ns": 3596
+      "controller_wall_ns": 2269
     },
     {
       "step": 36,
@@ -971,7 +971,7 @@
       "tau_s_next_nm": 30.83880182,
       "residual_v_v": 3.3881641,
       "residual_nm": 4.84023443,
-      "controller_wall_ns": 3375
+      "controller_wall_ns": 3161
     },
     {
       "step": 37,
@@ -998,7 +998,7 @@
       "tau_s_next_nm": 30.9221445,
       "residual_v_v": 3.61333421,
       "residual_nm": 5.16190602,
-      "controller_wall_ns": 4072
+      "controller_wall_ns": 3320
     },
     {
       "step": 38,
@@ -1025,7 +1025,7 @@
       "tau_s_next_nm": 30.84207766,
       "residual_v_v": 3.17568436,
       "residual_nm": 4.53669194,
-      "controller_wall_ns": 2516
+      "controller_wall_ns": 2570
     },
     {
       "step": 39,
@@ -1052,7 +1052,7 @@
       "tau_s_next_nm": 30.62160839,
       "residual_v_v": 2.19150643,
       "residual_nm": 3.13072347,
-      "controller_wall_ns": 3685
+      "controller_wall_ns": 1421
     },
     {
       "step": 40,
@@ -1079,7 +1079,7 @@
       "tau_s_next_nm": 30.30655731,
       "residual_v_v": 0.86954731,
       "residual_nm": 1.24221045,
-      "controller_wall_ns": 3315
+      "controller_wall_ns": 1436
     },
     {
       "step": 41,
@@ -1106,7 +1106,7 @@
       "tau_s_next_nm": 29.95774839,
       "residual_v_v": -0.53146864,
       "residual_nm": -0.75924091,
-      "controller_wall_ns": 2019
+      "controller_wall_ns": 1180
     },
     {
       "step": 42,
@@ -1133,7 +1133,7 @@
       "tau_s_next_nm": 29.64012138,
       "residual_v_v": -1.75310348,
       "residual_nm": -2.50443354,
-      "controller_wall_ns": 3667
+      "controller_wall_ns": 1133
     },
     {
       "step": 43,
@@ -1160,7 +1160,7 @@
       "tau_s_next_nm": 29.41041691,
       "residual_v_v": -2.58492648,
       "residual_nm": -3.69275211,
-      "controller_wall_ns": 3030
+      "controller_wall_ns": 1684
     },
     {
       "step": 44,
@@ -1187,7 +1187,7 @@
       "tau_s_next_nm": 29.3063333,
       "residual_v_v": -2.90026673,
       "residual_nm": -4.14323819,
-      "controller_wall_ns": 3124
+      "controller_wall_ns": 1814
     },
     {
       "step": 45,
@@ -1214,7 +1214,7 @@
       "tau_s_next_nm": 29.33990298,
       "residual_v_v": -2.67394387,
       "residual_nm": -3.81991982,
-      "controller_wall_ns": 3750
+      "controller_wall_ns": 1110
     },
     {
       "step": 46,
@@ -1241,7 +1241,7 @@
       "tau_s_next_nm": 29.49652723,
       "residual_v_v": -1.98014929,
       "residual_nm": -2.8287847,
-      "controller_wall_ns": 2557
+      "controller_wall_ns": 1236
     },
     {
       "step": 47,
@@ -1268,7 +1268,7 @@
       "tau_s_next_nm": 29.73954381,
       "residual_v_v": -0.97247737,
       "residual_nm": -1.38925339,
-      "controller_wall_ns": 1368
+      "controller_wall_ns": 971
     },
     {
       "step": 48,
@@ -1295,7 +1295,7 @@
       "tau_s_next_nm": 30.01892382,
       "residual_v_v": 0.14890598,
       "residual_nm": 0.21272282,
-      "controller_wall_ns": 2508
+      "controller_wall_ns": 1071
     },
     {
       "step": 49,
@@ -1322,7 +1322,7 @@
       "tau_s_next_nm": 30.28183452,
       "residual_v_v": 1.17606134,
       "residual_nm": 1.68008764,
-      "controller_wall_ns": 3671
+      "controller_wall_ns": 1063
     },
     {
       "step": 50,
@@ -1349,7 +1349,7 @@
       "tau_s_next_nm": 30.48255832,
       "residual_v_v": 1.93067496,
       "residual_nm": 2.75810709,
-      "controller_wall_ns": 3804
+      "controller_wall_ns": 1435
     },
     {
       "step": 51,
@@ -1376,7 +1376,7 @@
       "tau_s_next_nm": 30.58982706,
       "residual_v_v": 2.29371513,
       "residual_nm": 3.2767359,
-      "controller_wall_ns": 2486
+      "controller_wall_ns": 923
     },
     {
       "step": 52,
@@ -1403,7 +1403,7 @@
       "tau_s_next_nm": 30.59075089,
       "residual_v_v": 2.22296972,
       "residual_nm": 3.17567103,
-      "controller_wall_ns": 3372
+      "controller_wall_ns": 1069
     },
     {
       "step": 53,
@@ -1430,7 +1430,7 @@
       "tau_s_next_nm": 30.49148941,
       "residual_v_v": 1.75630622,
       "residual_nm": 2.50900888,
-      "controller_wall_ns": 3111
+      "controller_wall_ns": 1710
     },
     {
       "step": 54,
@@ -1457,7 +1457,7 @@
       "tau_s_next_nm": 30.31514001,
       "residual_v_v": 1.00069647,
       "residual_nm": 1.42956639,
-      "controller_wall_ns": 2114
+      "controller_wall_ns": 1307
     },
     {
       "step": 55,
@@ -1484,7 +1484,7 @@
       "tau_s_next_nm": 30.09721152,
       "residual_v_v": 0.10931111,
       "residual_nm": 0.15615872,
-      "controller_wall_ns": 3767
+      "controller_wall_ns": 1017
     },
     {
       "step": 56,
@@ -1511,7 +1511,7 @@
       "tau_s_next_nm": 29.87909412,
       "residual_v_v": -0.74882455,
       "residual_nm": -1.06974936,
-      "controller_wall_ns": 2937
+      "controller_wall_ns": 1507
     },
     {
       "step": 57,
@@ -1538,7 +1538,7 @@
       "tau_s_next_nm": 29.70040082,
       "residual_v_v": -1.42061175,
       "residual_nm": -2.02944536,
-      "controller_wall_ns": 2751
+      "controller_wall_ns": 1067
     },
     {
       "step": 58,
@@ -1565,7 +1565,7 @@
       "tau_s_next_nm": 29.59162416,
       "residual_v_v": -1.79592146,
       "residual_nm": -2.56560209,
-      "controller_wall_ns": 4149
+      "controller_wall_ns": 1099
     },
     {
       "step": 59,
@@ -1592,7 +1592,7 @@
       "tau_s_next_nm": 29.56871613,
       "residual_v_v": -1.82502015,
       "residual_nm": -2.60717164,
-      "controller_wall_ns": 3212
+      "controller_wall_ns": 2553
     },
     {
       "step": 60,
@@ -1619,7 +1619,7 @@
       "tau_s_next_nm": 29.63077303,
       "residual_v_v": -1.52377593,
       "residual_nm": -2.17682276,
-      "controller_wall_ns": 3586
+      "controller_wall_ns": 2510
     },
     {
       "step": 61,
@@ -1646,7 +1646,7 @@
       "tau_s_next_nm": 29.76120614,
       "residual_v_v": -0.96658504,
       "residual_nm": -1.38083577,
-      "controller_wall_ns": 2955
+      "controller_wall_ns": 3184
     },
     {
       "step": 62,
@@ -1673,7 +1673,7 @@
       "tau_s_next_nm": 29.93193552,
       "residual_v_v": -0.26921601,
       "residual_nm": -0.38459429,
-      "controller_wall_ns": 3091
+      "controller_wall_ns": 2181
     },
     {
       "step": 63,
@@ -1700,7 +1700,7 @@
       "tau_s_next_nm": 30.1094895,
       "residual_v_v": 0.43459302,
       "residual_nm": 0.62084717,
-      "controller_wall_ns": 1629
+      "controller_wall_ns": 2561
     },
     {
       "step": 64,
@@ -1727,7 +1727,7 @@
       "tau_s_next_nm": 30.26156895,
       "residual_v_v": 1.0181498,
       "residual_nm": 1.45449971,
-      "controller_wall_ns": 20918
+      "controller_wall_ns": 2632
     },
     {
       "step": 65,
@@ -1754,7 +1754,7 @@
       "tau_s_next_nm": 30.36272391,
       "residual_v_v": 1.38392281,
       "residual_nm": 1.97703258,
-      "controller_wall_ns": 3433
+      "controller_wall_ns": 2549
     },
     {
       "step": 66,
@@ -1781,7 +1781,7 @@
       "tau_s_next_nm": 30.39822821,
       "residual_v_v": 1.47913544,
       "residual_nm": 2.11305063,
-      "controller_wall_ns": 3659
+      "controller_wall_ns": 1710
     },
     {
       "step": 67,
@@ -1808,7 +1808,7 @@
       "tau_s_next_nm": 30.3657875,
       "residual_v_v": 1.30258126,
       "residual_nm": 1.86083037,
-      "controller_wall_ns": 3776
+      "controller_wall_ns": 2625
     },
     {
       "step": 68,
@@ -1835,7 +1835,7 @@
       "tau_s_next_nm": 30.27512415,
       "residual_v_v": 0.90195558,
       "residual_nm": 1.28850798,
-      "controller_wall_ns": 1693
+      "controller_wall_ns": 1891
     },
     {
       "step": 69,
@@ -1862,7 +1862,7 @@
       "tau_s_next_nm": 30.14568133,
       "residual_v_v": 0.36258752,
       "residual_nm": 0.51798217,
-      "controller_wall_ns": 2625
+      "controller_wall_ns": 2968
     },
     {
       "step": 70,
@@ -1889,7 +1889,7 @@
       "tau_s_next_nm": 30.00281565,
       "residual_v_v": -0.21006706,
       "residual_nm": -0.30009581,
-      "controller_wall_ns": 1346
+      "controller_wall_ns": 1867
     },
     {
       "step": 71,
@@ -1916,7 +1916,7 @@
       "tau_s_next_nm": 29.87304671,
       "residual_v_v": -0.71070048,
       "residual_nm": -1.0152864,
-      "controller_wall_ns": 3030
+      "controller_wall_ns": 2652
     },
     {
       "step": 72,
@@ -1943,7 +1943,7 @@
       "tau_s_next_nm": 29.77917918,
       "residual_v_v": -1.05328577,
       "residual_nm": -1.50469396,
-      "controller_wall_ns": 2624
+      "controller_wall_ns": 2478
     },
     {
       "step": 73,
@@ -1970,7 +1970,7 @@
       "tau_s_next_nm": 29.7362427,
       "residual_v_v": -1.18554805,
       "residual_nm": -1.69364008,
-      "controller_wall_ns": 1447
+      "controller_wall_ns": 2524
     },
     {
       "step": 74,
@@ -1997,7 +1997,7 @@
       "tau_s_next_nm": 29.74906976,
       "residual_v_v": -1.09636862,
       "residual_nm": -1.56624088,
-      "controller_wall_ns": 2672
+      "controller_wall_ns": 3331
     },
     {
       "step": 75,
@@ -2024,7 +2024,7 @@
       "tau_s_next_nm": 29.81196208,
       "residual_v_v": -0.81522821,
       "residual_nm": -1.16461173,
-      "controller_wall_ns": 2701
+      "controller_wall_ns": 2406
     },
     {
       "step": 76,
@@ -2051,7 +2051,7 @@
       "tau_s_next_nm": 29.91040942,
       "residual_v_v": -0.40434257,
       "residual_nm": -0.57763224,
-      "controller_wall_ns": 1537
+      "controller_wall_ns": 1560
     },
     {
       "step": 77,
@@ -2078,7 +2078,7 @@
       "tau_s_next_nm": 30.02437448,
       "residual_v_v": 0.05457513,
       "residual_nm": 0.07796447,
-      "controller_wall_ns": 9354
+      "controller_wall_ns": 2511
     },
     {
       "step": 78,
@@ -2105,7 +2105,7 @@
       "tau_s_next_nm": 30.13235986,
       "residual_v_v": 0.47617533,
       "residual_nm": 0.68025047,
-      "controller_wall_ns": 2960
+      "controller_wall_ns": 1652
     },
     {
       "step": 79,
@@ -2132,7 +2132,7 @@
       "tau_s_next_nm": 30.21539435,
       "residual_v_v": 0.78695831,
       "residual_nm": 1.12422616,
-      "controller_wall_ns": 2557
+      "controller_wall_ns": 2763
     },
     {
       "step": 80,
@@ -2159,7 +2159,7 @@
       "tau_s_next_nm": 30.26021145,
       "residual_v_v": 0.93768687,
       "residual_nm": 1.33955268,
-      "controller_wall_ns": 1485
+      "controller_wall_ns": 27755
     },
     {
       "step": 81,
@@ -2186,7 +2186,7 @@
       "tau_s_next_nm": 30.26116289,
       "residual_v_v": 0.91075111,
       "residual_nm": 1.30107301,
-      "controller_wall_ns": 2944
+      "controller_wall_ns": 2232
     },
     {
       "step": 82,
@@ -2213,7 +2213,7 @@
       "tau_s_next_nm": 30.22069615,
       "residual_v_v": 0.7214917,
       "residual_nm": 1.03070243,
-      "controller_wall_ns": 2662
+      "controller_wall_ns": 2557
     },
     {
       "step": 83,
@@ -2240,7 +2240,7 @@
       "tau_s_next_nm": 30.14845076,
       "residual_v_v": 0.41356572,
       "residual_nm": 0.59080816,
-      "controller_wall_ns": 1449
+      "controller_wall_ns": 1641
     },
     {
       "step": 84,
@@ -2267,7 +2267,7 @@
       "tau_s_next_nm": 30.05919209,
       "residual_v_v": 0.04947062,
       "residual_nm": 0.07067231,
-      "controller_wall_ns": 2654
+      "controller_wall_ns": 2943
     },
     {
       "step": 85,
@@ -2294,7 +2294,7 @@
       "tau_s_next_nm": 29.96994503,
       "residual_v_v": -0.30182866,
       "residual_nm": -0.4311838,
-      "controller_wall_ns": 2739
+      "controller_wall_ns": 1830
     },
     {
       "step": 86,
@@ -2321,7 +2321,7 @@
       "tau_s_next_nm": 29.89682472,
       "residual_v_v": -0.57776064,
       "residual_nm": -0.82537235,
-      "controller_wall_ns": 1504
+      "controller_wall_ns": 2505
     },
     {
       "step": 87,
@@ -2348,7 +2348,7 @@
       "tau_s_next_nm": 29.85214335,
       "residual_v_v": -0.73310077,
       "residual_nm": -1.04728681,
-      "controller_wall_ns": 3461
+      "controller_wall_ns": 2567
     },
     {
       "step": 88,
@@ -2375,7 +2375,7 @@
       "tau_s_next_nm": 29.84234004,
       "residual_v_v": -0.74710983,
       "residual_nm": -1.06729975,
-      "controller_wall_ns": 3051
+      "controller_wall_ns": 2579
     },
     {
       "step": 89,
@@ -2402,7 +2402,7 @@
       "tau_s_next_nm": 29.86711452,
       "residual_v_v": -0.62578448,
       "residual_nm": -0.89397782,
-      "controller_wall_ns": 2964
+      "controller_wall_ns": 1750
     },
     {
       "step": 90,
@@ -2429,7 +2429,7 @@
       "tau_s_next_nm": 29.91988198,
       "residual_v_v": -0.39912717,
       "residual_nm": -0.57018167,
-      "controller_wall_ns": 1783
+      "controller_wall_ns": 2733
     },
     {
       "step": 91,
@@ -2456,7 +2456,7 @@
       "tau_s_next_nm": 29.98938265,
       "residual_v_v": -0.11426188,
       "residual_nm": -0.16323126,
-      "controller_wall_ns": 3073
+      "controller_wall_ns": 1546
     },
     {
       "step": 92,
@@ -2483,7 +2483,7 @@
       "tau_s_next_nm": 30.06205097,
       "residual_v_v": 0.17408671,
       "residual_nm": 0.2486953,
-      "controller_wall_ns": 3416
+      "controller_wall_ns": 2808
     },
     {
       "step": 93,
@@ -2510,7 +2510,7 @@
       "tau_s_next_nm": 30.1246303,
       "residual_v_v": 0.41387254,
       "residual_nm": 0.59124649,
-      "controller_wall_ns": 1618
+      "controller_wall_ns": 2207
     },
     {
       "step": 94,
@@ -2537,7 +2537,7 @@
       "tau_s_next_nm": 30.16652671,
       "residual_v_v": 0.56489006,
       "residual_nm": 0.8069858,
-      "controller_wall_ns": 4432
+      "controller_wall_ns": 3236
     },
     {
       "step": 95,
@@ -2564,7 +2564,7 @@
       "tau_s_next_nm": 30.18150714,
       "residual_v_v": 0.60526901,
       "residual_nm": 0.86467001,
-      "controller_wall_ns": 3223
+      "controller_wall_ns": 2568
     },
     {
       "step": 96,
@@ -2591,7 +2591,7 @@
       "tau_s_next_nm": 30.16851252,
       "residual_v_v": 0.5343152,
       "residual_nm": 0.76330744,
-      "controller_wall_ns": 2682
+      "controller_wall_ns": 2966
     },
     {
       "step": 97,
@@ -2618,7 +2618,7 @@
       "tau_s_next_nm": 30.13152581,
       "residual_v_v": 0.37140149,
       "residual_nm": 0.53057356,
-      "controller_wall_ns": 1519
+      "controller_wall_ns": 1980
     },
     {
       "step": 98,
@@ -2645,7 +2645,7 @@
       "tau_s_next_nm": 30.07858056,
       "residual_v_v": 0.1513191,
       "residual_nm": 0.21617015,
-      "controller_wall_ns": 3301
+      "controller_wall_ns": 2462
     },
     {
       "step": 99,
@@ -2672,7 +2672,7 @@
       "tau_s_next_nm": 30.02011654,
       "residual_v_v": -0.08288927,
       "residual_nm": -0.11841324,
-      "controller_wall_ns": 1626
+      "controller_wall_ns": 2893
     },
     {
       "step": 100,
@@ -2699,7 +2699,7 @@
       "tau_s_next_nm": 29.9669855,
       "residual_v_v": -0.28818317,
       "residual_nm": -0.41169024,
-      "controller_wall_ns": 1277
+      "controller_wall_ns": 2625
     },
     {
       "step": 101,
@@ -2726,7 +2726,7 @@
       "tau_s_next_nm": 29.92846951,
       "residual_v_v": -0.42930128,
       "residual_nm": -0.61328755,
-      "controller_wall_ns": 3001
+      "controller_wall_ns": 2903
     },
     {
       "step": 102,
@@ -2753,7 +2753,7 @@
       "tau_s_next_nm": 29.91067532,
       "residual_v_v": -0.48466776,
       "residual_nm": -0.69238252,
-      "controller_wall_ns": 1529
+      "controller_wall_ns": 2489
     },
     {
       "step": 103,
@@ -2780,7 +2780,7 @@
       "tau_s_next_nm": 29.91559322,
       "residual_v_v": -0.44946157,
       "residual_nm": -0.64208796,
-      "controller_wall_ns": 1109
+      "controller_wall_ns": 2652
     },
     {
       "step": 104,
@@ -2807,7 +2807,7 @@
       "tau_s_next_nm": 29.94097121,
       "residual_v_v": -0.33546653,
       "residual_nm": -0.47923789,
-      "controller_wall_ns": 25103
+      "controller_wall_ns": 2856
     },
     {
       "step": 105,
@@ -2834,7 +2834,7 @@
       "tau_s_next_nm": 29.98098475,
       "residual_v_v": -0.16793449,
       "residual_nm": -0.23990642,
-      "controller_wall_ns": 2505
+      "controller_wall_ns": 2667
     },
     {
       "step": 106,
@@ -2861,7 +2861,7 @@
       "tau_s_next_nm": 30.02752422,
       "residual_v_v": 0.01977937,
       "residual_nm": 0.02825624,
-      "controller_wall_ns": 3168
+      "controller_wall_ns": 1928
     },
     {
       "step": 107,
@@ -2888,7 +2888,7 @@
       "tau_s_next_nm": 30.07181329,
       "residual_v_v": 0.19270219,
       "residual_nm": 0.27528884,
-      "controller_wall_ns": 1964
+      "controller_wall_ns": 2560
     },
     {
       "step": 108,
@@ -2915,7 +2915,7 @@
       "tau_s_next_nm": 30.10603286,
       "residual_v_v": 0.32061872,
       "residual_nm": 0.45802674,
-      "controller_wall_ns": 3831
+      "controller_wall_ns": 3103
     },
     {
       "step": 109,
@@ -2942,7 +2942,7 @@
       "tau_s_next_nm": 30.1246566,
       "residual_v_v": 0.3832075,
       "residual_nm": 0.54743929,
-      "controller_wall_ns": 2683
+      "controller_wall_ns": 2951
     },
     {
       "step": 110,
@@ -2969,7 +2969,7 @@
       "tau_s_next_nm": 30.1252868,
       "residual_v_v": 0.37309997,
       "residual_nm": 0.53299995,
-      "controller_wall_ns": 1435
+      "controller_wall_ns": 1743
     },
     {
       "step": 111,
@@ -2996,7 +2996,7 @@
       "tau_s_next_nm": 30.1088853,
       "residual_v_v": 0.29643988,
       "residual_nm": 0.42348554,
-      "controller_wall_ns": 2953
+      "controller_wall_ns": 2511
     },
     {
       "step": 112,
@@ -3023,7 +3023,7 @@
       "tau_s_next_nm": 30.07940284,
       "residual_v_v": 0.17098539,
       "residual_nm": 0.24426484,
-      "controller_wall_ns": 1794
+      "controller_wall_ns": 2495
     },
     {
       "step": 113,
@@ -3050,7 +3050,7 @@
       "tau_s_next_nm": 30.04290511,
       "residual_v_v": 0.02223057,
       "residual_nm": 0.03175796,
-      "controller_wall_ns": 1323
+      "controller_wall_ns": 2484
     },
     {
       "step": 114,
@@ -3077,7 +3077,7 @@
       "tau_s_next_nm": 30.00637069,
       "residual_v_v": -0.12164499,
       "residual_nm": -0.17377856,
-      "controller_wall_ns": 2887
+      "controller_wall_ns": 2910
     },
     {
       "step": 115,
@@ -3104,7 +3104,7 @@
       "tau_s_next_nm": 29.976386,
       "residual_v_v": -0.23501854,
       "residual_nm": -0.33574078,
-      "controller_wall_ns": 1624
+      "controller_wall_ns": 2576
     },
     {
       "step": 116,
@@ -3131,7 +3131,7 @@
       "tau_s_next_nm": 29.95797583,
       "residual_v_v": -0.29929556,
       "residual_nm": -0.42756509,
-      "controller_wall_ns": 3079
+      "controller_wall_ns": 1826
     },
     {
       "step": 117,
@@ -3158,7 +3158,7 @@
       "tau_s_next_nm": 29.95377861,
       "residual_v_v": -0.30584294,
       "residual_nm": -0.43691849,
-      "controller_wall_ns": 3225
+      "controller_wall_ns": 2916
     },
     {
       "step": 118,
@@ -3185,7 +3185,7 @@
       "tau_s_next_nm": 29.96370389,
       "residual_v_v": -0.2569447,
       "residual_nm": -0.36706386,
-      "controller_wall_ns": 2973
+      "controller_wall_ns": 2589
     },
     {
       "step": 119,
@@ -3212,7 +3212,7 @@
       "tau_s_next_nm": 29.98511116,
       "residual_v_v": -0.1647293,
       "residual_nm": -0.23532758,
-      "controller_wall_ns": 3095
+      "controller_wall_ns": 2927
     },
     {
       "step": 120,
@@ -3239,7 +3239,7 @@
       "tau_s_next_nm": 30.01344589,
       "residual_v_v": -0.04838964,
       "residual_nm": -0.06912805,
-      "controller_wall_ns": 2004
+      "controller_wall_ns": 2793
     },
     {
       "step": 121,
@@ -3266,7 +3266,7 @@
       "tau_s_next_nm": 30.04318448,
       "residual_v_v": 0.06969654,
       "residual_nm": 0.09956648,
-      "controller_wall_ns": 3071
+      "controller_wall_ns": 2046
     },
     {
       "step": 122,
@@ -3293,7 +3293,7 @@
       "tau_s_next_nm": 30.06889232,
       "residual_v_v": 0.16818045,
       "residual_nm": 0.24025779,
-      "controller_wall_ns": 3568
+      "controller_wall_ns": 2783
     },
     {
       "step": 123,
@@ -3320,7 +3320,7 @@
       "tau_s_next_nm": 30.0861942,
       "residual_v_v": 0.23051576,
       "residual_nm": 0.32930823,
-      "controller_wall_ns": 1631
+      "controller_wall_ns": 1808
     },
     {
       "step": 124,
@@ -3347,7 +3347,7 @@
       "tau_s_next_nm": 30.09249023,
       "residual_v_v": 0.24764411,
       "residual_nm": 0.3537773,
-      "controller_wall_ns": 3173
+      "controller_wall_ns": 2657
     },
     {
       "step": 125,
@@ -3374,7 +3374,7 @@
       "tau_s_next_nm": 30.08730984,
       "residual_v_v": 0.21917814,
       "residual_nm": 0.31311163,
-      "controller_wall_ns": 1513
+      "controller_wall_ns": 2479
     },
     {
       "step": 126,
@@ -3401,7 +3401,7 @@
       "tau_s_next_nm": 30.07226692,
       "residual_v_v": 0.15295813,
       "residual_nm": 0.21851162,
-      "controller_wall_ns": 1128
+      "controller_wall_ns": 2818
     },
     {
       "step": 127,
@@ -3428,7 +3428,7 @@
       "tau_s_next_nm": 30.05064906,
       "residual_v_v": 0.06315516,
       "residual_nm": 0.09022166,
-      "controller_wall_ns": 4008
+      "controller_wall_ns": 2897
     },
     {
       "step": 128,
@@ -3455,7 +3455,7 @@
       "tau_s_next_nm": 30.02673298,
       "residual_v_v": -0.03265515,
       "residual_nm": -0.04665021,
-      "controller_wall_ns": 1606
+      "controller_wall_ns": 2796
     },
     {
       "step": 129,
@@ -3482,7 +3482,7 @@
       "tau_s_next_nm": 30.00496042,
       "residual_v_v": -0.11686171,
       "residual_nm": -0.1669453,
-      "controller_wall_ns": 3142
+      "controller_wall_ns": 1704
     },
     {
       "step": 130,
@@ -3509,7 +3509,7 @@
       "tau_s_next_nm": 29.98912841,
       "residual_v_v": -0.17499488,
       "residual_nm": -0.24999268,
-      "controller_wall_ns": 1916
+      "controller_wall_ns": 2555
     },
     {
       "step": 131,
@@ -3536,7 +3536,7 @@
       "tau_s_next_nm": 29.98173959,
       "residual_v_v": -0.19814739,
       "residual_nm": -0.2830677,
-      "controller_wall_ns": 3070
+      "controller_wall_ns": 2472
     },
     {
       "step": 132,
@@ -3563,7 +3563,7 @@
       "tau_s_next_nm": 29.98362373,
       "residual_v_v": -0.1842459,
       "residual_nm": -0.26320842,
-      "controller_wall_ns": 2072
+      "controller_wall_ns": 2587
     },
     {
       "step": 133,
@@ -3590,7 +3590,7 @@
       "tau_s_next_nm": 29.99388593,
       "residual_v_v": -0.13801303,
       "residual_nm": -0.19716147,
-      "controller_wall_ns": 1185
+      "controller_wall_ns": 1762
     },
     {
       "step": 134,
@@ -3617,7 +3617,7 @@
       "tau_s_next_nm": 30.01017259,
       "residual_v_v": -0.06970713,
       "residual_nm": -0.09958162,
-      "controller_wall_ns": 2809
+      "controller_wall_ns": 2499
     },
     {
       "step": 135,
@@ -3644,7 +3644,7 @@
       "tau_s_next_nm": 30.0291866,
       "residual_v_v": 0.00705758,
       "residual_nm": 0.01008226,
-      "controller_wall_ns": 1660
+      "controller_wall_ns": 2509
     },
     {
       "step": 136,
@@ -3671,7 +3671,7 @@
       "tau_s_next_nm": 30.04734087,
       "residual_v_v": 0.07796169,
       "residual_nm": 0.11137384,
-      "controller_wall_ns": 3113
+      "controller_wall_ns": 2746
     },
     {
       "step": 137,
@@ -3698,7 +3698,7 @@
       "tau_s_next_nm": 30.06142213,
       "residual_v_v": 0.13059737,
       "residual_nm": 0.18656768,
-      "controller_wall_ns": 2957
+      "controller_wall_ns": 1790
     },
     {
       "step": 138,
@@ -3725,7 +3725,7 @@
       "tau_s_next_nm": 30.06914446,
       "residual_v_v": 0.15658452,
       "residual_nm": 0.22369218,
-      "controller_wall_ns": 1661
+      "controller_wall_ns": 2579
     },
     {
       "step": 139,
@@ -3752,7 +3752,7 @@
       "tau_s_next_nm": 30.06950169,
       "residual_v_v": 0.15283716,
       "residual_nm": 0.21833879,
-      "controller_wall_ns": 2929
+      "controller_wall_ns": 6702
     },
     {
       "step": 140,
@@ -3779,7 +3779,7 @@
       "tau_s_next_nm": 30.06286976,
       "residual_v_v": 0.12180365,
       "residual_nm": 0.17400522,
-      "controller_wall_ns": 3017
+      "controller_wall_ns": 2958
     },
     {
       "step": 141,
@@ -3806,7 +3806,7 @@
       "tau_s_next_nm": 30.05085696,
       "residual_v_v": 0.07069784,
       "residual_nm": 0.10099691,
-      "controller_wall_ns": 1811
+      "controller_wall_ns": 2948
     },
     {
       "step": 142,
@@ -3833,7 +3833,7 @@
       "tau_s_next_nm": 30.03594334,
       "residual_v_v": 0.00991767,
       "residual_nm": 0.0141681,
-      "controller_wall_ns": 2816
+      "controller_wall_ns": 1798
     },
     {
       "step": 143,
@@ -3860,7 +3860,7 @@
       "tau_s_next_nm": 30.02098494,
       "residual_v_v": -0.04901649,
       "residual_nm": -0.07002356,
-      "controller_wall_ns": 1914
+      "controller_wall_ns": 2571
     },
     {
       "step": 144,
@@ -3887,7 +3887,7 @@
       "tau_s_next_nm": 30.0086782,
       "residual_v_v": -0.09560415,
       "residual_nm": -0.13657736,
-      "controller_wall_ns": 3037
+      "controller_wall_ns": 3019
     }
   ]
 }

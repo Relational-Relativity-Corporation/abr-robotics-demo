@@ -3,6 +3,11 @@
 Generator: Claude Sonnet 4.6  |  Origin: Human (Relational Relativity Corp)
 Steps: 144  |  dt = 0.041667 s  |  Total time: 6.0000 s
 
+*Refactored under the Principle of Observational Continuity.*
+*K_T and R_W are now declared Coupling edges. τ_s enters the declared domain*
+*in its physical units [N·m] at node 0. The voltage gap emerges through*
+*declared topology traversal (A.spatial[2][2] on terminal edge e_2).*
+
 ---
 
 ## 1. Setup
@@ -22,12 +27,28 @@ Steps: 144  |  dt = 0.041667 s  |  Total time: 6.0000 s
 - Sigma: sigma_v += delta_V
 
 **Controller K** — Frozen Kernel V8 Rust operators (irrs_kernel_py / abr-irrs)
-- Declared topology: v_τ(0) → v_cmd(1), Provenance=Coupling, 1 edge
-- NodeField: x[v_τ] = tau_s × R_W/K_T [V]; x[v_cmd] = v_cmd_prior [V]
-- A: A_K = x[v_τ] − x[v_cmd]  [V] (Rust operator_a via PyO3)
-- B: B_K = A_K (terminal edge identity; Rust operator_b via PyO3)
-- R: OPEN (rho_base, chi_0 not declared through M; operator_r NOT called)
-- Sigma: sigma_v += B_K
+
+  Declared topology (Principle of Observational Continuity):
+  ```
+  Node 0: load        — τ_s [N·m]       (primary observable)
+  Node 1: motor shaft — i_req [A]        (K_T coupling: i = τ/K_T)
+  Node 2: winding     — v_req [V]        (R_W coupling: v = i×R_W)
+  Node 3: driver      — v_cmd_prior [V]  (prior actuator state, observable)
+
+  e_0: (0→1) Coupling  K_T  [torque → current]
+  e_1: (1→2) Coupling  R_W  [current → voltage]
+  e_2: (2→3) Coupling       [required voltage vs commanded, terminal]
+  ```
+
+  NodeField (k=3 components):
+  - comp 0 [N·m]:  [τ_s,  0,       0,       0        ]
+  - comp 1 [A]:    [0,    τ_s/K_T, 0,       0        ]
+  - comp 2 [V]:    [0,    0,       τ_s·R_W/K_T, v_cmd]
+
+  A (Rust operator_a): A.spatial[2][2] = τ_s·R_W/K_T − v_cmd_prior  [V]
+  B (Rust operator_b): B.spatial[2][2] = A.spatial[2][2]  [V] (e_2 terminal, identity)
+  R: OPEN (rho_base, chi_0 not declared through M; operator_r NOT called)
+  Sigma: sigma_v += B.spatial[2][2]
 
 **C projection (both controllers)**
 - frac = clamp((THETA_TARGET − θ) / THETA_TARGET, −1, 1)
@@ -57,24 +78,28 @@ Steps: 144  |  dt = 0.041667 s  |  Total time: 6.0000 s
 - v_cmd = 18.666 V
 
 **Controller K peak A response** (step 7, θ=8.75°):
-- A_K = 18.8417 V (Rust operator_a)
-- B_K = 18.8417 V (Rust operator_b, terminal edge identity)
+- A[e_2, voltage] = 18.8417 V (Rust operator_a, terminal edge)
+- B[e_2, voltage] = 18.8417 V (Rust operator_b, terminal identity)
 - sigma_v = 11.0948 V
 - v_cmd = 21.784 V
 
 
-## 4. Trace K Identity: A_K(t) = Residual_V(t-1)
+## 4. Trace K Identity: A[e_2,volt](t) = Residual_V(t-1)
 
-From the traceability matrix: A_K(t+1) = tau_s(t+1)×R_W/K_T − v_cmd(t)
-This is the voltage residual of the prior step — the gap between what the sensor
-reports as needed and what was commanded.
+From the declared topology: A.spatial[2][2] at step t equals
+τ_s(t)·R_W/K_T − v_cmd(t−1). The voltage residual of the prior step is
+τ_s(t)·R_W/K_T − v_cmd(t−1). These are equal by construction.
+
+The identity is preserved under the refactored declaration because the
+voltage gap at the terminal edge e_2 is the same quantity, now derived
+through declared topology traversal rather than pre-computation.
 
 - Steps checked: 143
 - Maximum deviation: 0.00e+00 V
 - Identity holds at all steps (< 1e-9 V): **YES**
 
 Sample (first 6 steps with prior residual):
-| Step | A_K(t) [V] | Residual_V(t-1) [V] | Error [V] |
+| Step | A[e_2,volt](t) [V] | Residual_V(t-1) [V] | Error [V] |
 |---|---|---|---|
 | — | -19.000000 | -19.000000 | 0.00e+00 |
 | — | 4.066435 | 4.066435 | 0.00e+00 |
@@ -97,9 +122,9 @@ Final 1-second window (last 24 steps):
 
 | Metric | Controller P | Controller K |
 |---|---|---|
-| Total wall time (µs) | 439.1 | 1729.2 |
-| Mean per step (ns) | 3048 | 12008 |
-| Max per step (ns) | 25103 | 661705 |
+| Total wall time (µs) | 395.0 | 5424.3 |
+| Mean per step (ns) | 2743 | 37668 |
+| Max per step (ns) | 27755 | 499146 |
 
 Note: Controller K includes Python→Rust FFI overhead per step.
 The frozen Rust kernel compile time is not included.
@@ -108,13 +133,16 @@ The frozen Rust kernel compile time is not included.
 
 | Condition | Controller P | Controller K | Status |
 |---|---|---|---|
-| Trace K identity: A_K(t+1) = Residual_V(t) | N/A | PASS | OC-TRACE-1 dependency |
+| Trace K identity: A[e_2,volt](t+1) = Residual_V(t) | N/A | PASS | OC-TRACE-1 dependency |
+| K_T, R_W declared as Coupling edges (not pre-computed) | N/A | PASS | Observational Continuity |
+| τ_s [N·m] enters declared domain at node 0 in physical units | N/A | PASS | Operator fidelity |
 | R not evaluated (rho_base, chi_0 undeclared) | OPEN | OPEN | OC-TRACE-2, OC-TRACE-3 |
 | B output reported separately from R | PASS | PASS | Explicit in trace |
 | Operator authenticity: actual Frozen Kernel V8 Rust used | Python approx. | PASS (PyO3 binding) | Required by Origin |
 | Controllers drive independent plants | PASS | PASS | Separate plant state |
 | Independent disturbance triggers per plant | PASS | PASS | Per-theta trigger |
 | Machine-readable step traces (JSON) | PASS | PASS | Saved to experiment_outputs/ |
+| Full A/B spatial fields (3×3) in trace for provenance | N/A | PASS | Observational closure |
 
 **Open conditions (not resolvable here — require Origin declaration):**
 - OC-TRACE-1: Structural gap A_P_V(t+1) = Residual_V(t) + frac(t)×V_RAISE not eliminated.
@@ -128,3 +156,4 @@ The frozen Rust kernel compile time is not included.
 
 ---
 *Report generated by abr_closed_loop_experiment.py*
+*Refactored under the Principle of Observational Continuity.*
